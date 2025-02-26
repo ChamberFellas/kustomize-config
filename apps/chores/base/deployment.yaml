@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chores-service
+spec:
+  selector:
+    matchLabels:
+      app: chores-service
+  template:
+    metadata:
+      labels:
+        app: chores-service
+    spec:
+      containers:
+        - name: chores-service
+          image: weeturtle/chores
+          ports:
+            - containerPort: 3000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
