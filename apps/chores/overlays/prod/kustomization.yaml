@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: weeturtle/chores
-    newTag: latest
+    newTag: 7de105a64c5dc1c6c2dce8364412c4472a6f7452
