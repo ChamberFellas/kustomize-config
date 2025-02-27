@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: notifications-service
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  project: microservices
+  source:
+    repoURL: "git@github.com:ChamberFellas/kustomize-config.git"
+    path: apps/notifications-app/overlays/prod
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
