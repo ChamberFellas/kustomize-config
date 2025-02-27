@@ -8,7 +8,7 @@ metadata:
 spec:
   project: microservices
   source:
-    repoURL: "https://github.com/ChamberFellas/kustomize-config"
+    repoURL: "git@github.com:ChamberFellas/kustomize-config.git"
     path: shared
     targetRevision: HEAD
   destination:

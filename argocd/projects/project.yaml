@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Microservices project
   sourceRepos:
-    - "https://github.com/ChamberFellas/kustomize-config"
+    - "git@github.com:ChamberFellas/kustomize-config.git"
   destinations:
     - namespace: "*"
       server: https://kubernetes.default.svc
