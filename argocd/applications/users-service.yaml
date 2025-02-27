@@ -9,7 +9,7 @@ spec:
   project: microservices
   source:
     repoURL: "https://github.com/ChamberFellas/kustomize-config"
-    path: apps/users-service/overlays/prod
+    path: apps/users-app/overlays/prod
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
