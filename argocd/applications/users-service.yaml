@@ -8,8 +8,8 @@ metadata:
 spec:
   project: microservices
   source:
-    repoURL: "https://github.com/ChamberFellas/kustomize-config"
-    path: apps/users-service/overlays/prod
+    repoURL: "git@github.com:ChamberFellas/kustomize-config.git"
+    path: apps/users-app/overlays/prod
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
