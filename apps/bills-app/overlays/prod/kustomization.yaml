@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/bills
-    newTag: latest
+    newTag: 68a14c9
