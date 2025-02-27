@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/chat
-    newTag: latest
+    newTag: 61ce02b
