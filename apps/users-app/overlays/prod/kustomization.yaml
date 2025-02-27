@@ -4,6 +4,12 @@ kind: Kustomization
 resources:
   - ../../base
 
+patches:
+  - target:
+      kind: Deployment
+      name: users-service
+    path: patch.yaml
+
 images:
   - name: weeturtle/chores
     newTag: latest

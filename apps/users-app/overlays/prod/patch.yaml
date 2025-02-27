@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chores-service
+  name: users-service
 spec:
   replicas: 3

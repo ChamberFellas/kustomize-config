@@ -4,6 +4,12 @@ kind: Kustomization
 resources:
   - ../../base
 
+patches:
+  - target:
+      kind: Deployment
+      name: chores-service
+    path: patch.yaml
+
 images:
   - name: weeturtle/chores
     newTag: fdb6d6555a40d893ccde0a54e45573c072c21723
