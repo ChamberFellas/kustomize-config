@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/chores
-    newTag: latest
+    newTag: 213b5fb
