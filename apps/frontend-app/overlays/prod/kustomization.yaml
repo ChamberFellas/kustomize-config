@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/frontend
-    newTag: aa9988b
+    newTag: e22be16
