@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/frontend
-    newTag: latest
+    newTag: aa9988b
