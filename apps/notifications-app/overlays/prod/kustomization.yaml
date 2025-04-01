@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: weeturtle/notifications
-    newTag: bae50f6
+    newTag: 82f0561
